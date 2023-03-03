@@ -1,0 +1,29 @@
+{
+  "name": "sneaker-website-tello",
+  "version": "0.0.1",
+  "description": "El mejor lugar para todas las noticias relacionadas a Sneakers en Mexico",
+  "main": "index.js",
+  "authors": {
+    "name": "Alejandro Tello",
+    "email": "alejandro.tello.f@gmail.com"
+  },
+  "repository": "/sneaker-website-tello",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/babel-preset-app": "^4.4.6",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "autoprefixer": "^9.8.5",
+    "moment": "^2.27.0",
+    "svg-inline-loader": "^0.8.2",
+    "tailwindcss": "^1.4.6",
+    "tailwindcss-plugins": "^0.3.0",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-plugin-seo": "^0.1.4"
+  }
+}
