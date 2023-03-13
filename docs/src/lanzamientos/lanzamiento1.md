@@ -4,7 +4,8 @@ date: 2023-03-02T18:00
 time: 18:00:00
 description:
     Primer Lanzamiento
-imageUrl: /assets/img/ama1.webp
+imageUrl: /assets/img/ama1.png
+brand: Nike
 ---
 
  # {{ $frontmatter.title }}
@@ -12,5 +13,5 @@ imageUrl: /assets/img/ama1.webp
 ::: slot ama1 
 ![Lanzamiento image](/assets/img/ama1.webp)
 :::
-
 <ListaLanzamientos />
+

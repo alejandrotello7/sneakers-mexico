@@ -35,10 +35,6 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Blog',
-        link: '/blog/'
-      },
-      {
         text: 'Noticias',
         link: '/noticias/'
       },
