@@ -3,7 +3,7 @@ title: Defectos en Air Jordan 3 "White Cement"
 date: 2023-03-12
 description:
     El Reimagined Air Jordan 3 "White Cement" ha sido la sensación en las noticias recientes. Este lanzamiento está programado para este fin de semana, sin embargo, parece que algunos entusiastas de las zapatillas han recibido pares de lanzamientos sorpresa y lanzamientos de acceso exclusivo con un control de calidad muy deficiente en los pares
-imageUrl: /assets/img/articles/white-cement.png
+imageUrl: ../assets/img/articles/white-cement.png
 
 ---
 

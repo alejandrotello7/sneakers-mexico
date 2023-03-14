@@ -7,7 +7,7 @@
       <div class="grid grid-cols-2 pb-4 row-span-1">
         <div>
           <a :href="articles[0].path">
-            <img :alt="articles[0].frontmatter.title" :src=" '@'+ articles[0].frontmatter.imageUrl" />
+            <img :alt="articles[0].frontmatter.title" :src="articles[0].frontmatter.imageUrl" />
           </a>
         </div>
         <div class="pl-4">

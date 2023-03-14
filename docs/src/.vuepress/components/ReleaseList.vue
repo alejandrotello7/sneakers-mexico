@@ -8,7 +8,7 @@
         <div class="listaLanzamientos">
           <div class="grid grid-cols-2">
             <a :href="release.path" class="col-start-1">
-              <img :alt="release.imageTitle" :src=" '@' + release.imageUrl" />
+              <img :alt="release.imageTitle" :src=" release.imageUrl" />
             </a>
             <div class="col-start-2 text-sm pl-2 pt-12">
               <a :href="release.path">
