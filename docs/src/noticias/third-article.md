@@ -3,7 +3,7 @@ title: Third Article
 date: 2018-07-28
 description:
     Este es el tercer articulo.
-imageUrl: /assets/img/articles/sneakers3.jpg
+imageUrl: ../assets/img/articles/sneakers3.jpg
 
 ---
 
