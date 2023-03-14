@@ -44,18 +44,6 @@ module.exports = {
       }
 
     ],
-    sidebar: {
-      '/blog/': [
-        {
-          title: 'Blog',
-          collapsable: true,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
   },
 
   /**
@@ -73,3 +61,4 @@ module.exports = {
   }
 
 }
+
