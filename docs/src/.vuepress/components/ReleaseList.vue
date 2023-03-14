@@ -9,7 +9,6 @@
           <div class="grid grid-cols-2">
             <a :href="release.path" class="col-start-1">
               <img :alt="release.imageTitle" :src=" release.imageUrl" />
-              <img :alt="test" :src="$withBase('/assets/img/articles/white-cement.png')") />
             </a>
             <div class="col-start-2 text-sm pl-2 pt-12">
               <a :href="release.path">
