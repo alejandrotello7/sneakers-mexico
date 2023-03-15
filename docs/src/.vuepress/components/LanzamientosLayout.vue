@@ -15,7 +15,7 @@
           <div class="listaLanzamientos">
             <div class="container mx-auto">
               <a :href="lanzamiento.path">
-                <img :src="lanzamiento.frontmatter.imageUrl" />
+                <img :src="'..' + lanzamiento.frontmatter.imageUrl" />
               </a>
               <div class="font-bold">
                 <h2>{{ lanzamiento.frontmatter.title }}</h2>

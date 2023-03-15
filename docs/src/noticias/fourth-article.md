@@ -1,14 +1,14 @@
 ---
 title: Defectos en Air Jordan 3 "White Cement"
 date: 2023-03-12
+author: Alejandro Tello
 description:
     El Reimagined Air Jordan 3 "White Cement" ha sido la sensación en las noticias recientes. Este lanzamiento está programado para este fin de semana, sin embargo, parece que algunos entusiastas de las zapatillas han recibido pares de lanzamientos sorpresa y lanzamientos de acceso exclusivo con un control de calidad muy deficiente en los pares
 imageUrl: ../assets/img/articles/white-cement.png
-
+layout: NewPage
 ---
 
-# Fourth post
-
+![White Cement](~@source/.vuepress/public/assets/img/articles/white-cement.png)
 Actualización (13/03/23): Parece que la lista de problemas sigue creciendo. Un usuario @jcollector23 compró un par con un defecto de doble logotipo. Mira a continuación y mantente atento si escuchamos de Nike sobre estos problemas.
 
 El Reimagined Air Jordan 3 "White Cement" ha sido la sensación en las noticias recientes. Este lanzamiento está programado para este fin de semana, sin embargo, parece que algunos entusiastas de las zapatillas han recibido pares de lanzamientos sorpresa y lanzamientos de acceso exclusivo con un control de calidad muy deficiente en los pares. Algunos errores clave parecen ser picos de viuda desparejados, algunos de cuero arrugado, con el otro par siendo de cuero liso. También estamos viendo impresiones de camuflaje desparejadas encontradas en la caja de los dedos. Todas las imágenes de estos errores se pueden encontrar a continuación.

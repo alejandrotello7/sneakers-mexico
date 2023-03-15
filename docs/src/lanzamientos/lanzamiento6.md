@@ -4,7 +4,7 @@ date: 2023-03-03T18:00
 time: 18:00:00
 description:
     Quinto Lanzamiento
-imageUrl: ../assets/img/am1.png
+imageUrl: /assets/img/am1.png
 brand: Nike
 ---
  # {{ $frontmatter.title }}

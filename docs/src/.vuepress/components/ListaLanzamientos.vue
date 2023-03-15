@@ -1,7 +1,7 @@
 <template>
     <div class="listaLanzamientos">
       <div class="container mx-auto">
-        <img :src="$page.frontmatter.imageUrl" />
+        <img :src="'..' + $page.frontmatter.imageUrl" />
         <div class="font-bold">
           <h2> {{ $page.frontmatter.title }} </h2>
         </div>
