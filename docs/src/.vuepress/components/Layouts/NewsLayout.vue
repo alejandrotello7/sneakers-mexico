@@ -12,26 +12,32 @@
         </h1>
         <div class="head-new grid grid-cols-2 flex">
           <div class="flex-initial px-3 pb-3">
-            <img :alt="articles[0].frontmatter.title" :src="articles[0].frontmatter.imageUrl"/>
+            <a :href="articles[0].path">
+              <img :alt="articles[0].frontmatter.title" :src="'..' + articles[0].frontmatter.imageUrl"/>
+            </a>
           </div>
           <div class="flex-none">
             <h2 class="text-xl font-bold">
               {{ articles[0].frontmatter.title }}
             </h2>
             <p>{{ articles[0].frontmatter.description }}</p>
+            <router-link :to="articles[0].path">Read more</router-link>
           </div>
         </div>
         <div class="past-news grid grid-cols-2 flex">
           <div v-for="article in articles" class="py-5 cols-2">
             <div class="grid grid-cols-2 flex">
               <div class="flex-auto px-3 pb-3">
-                <img :alt="article.frontmatter.title" :src="article.frontmatter.imageUrl"/>
+                <a :href="article.path">
+                  <img :alt="article.frontmatter.title" :src="'..' + article.frontmatter.imageUrl"/>
+                </a>
               </div>
               <div class="flex-auto">
                 <h2 class="text-xl font-bold">
                   {{ article.frontmatter.title }}
                 </h2>
                 <p>{{ article.frontmatter.description }}</p>
+                <router-link :to="article.path">Read more</router-link>
               </div>
             </div>
           </div>

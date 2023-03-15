@@ -4,7 +4,7 @@ date: 2016-07-28
 author: Alejandro Tello
 description:
     Este es el primer articulo
-imageUrl: ../assets/img/articles/sneakers1.jpg
+imageUrl: /assets/img/articles/sneakers1.jpg
 layout: NewPage
 ---
 
