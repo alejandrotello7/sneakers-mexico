@@ -4,10 +4,7 @@ const { description } = require('../../package')
 module.exports = {
   title: 'Sneakers México',
   description: description,
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
