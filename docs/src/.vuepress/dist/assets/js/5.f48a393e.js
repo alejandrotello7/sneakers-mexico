@@ -1,0 +1,5 @@
+<<<<<<< Updated upstream:docs/src/.vuepress/dist/assets/js/5.ac8d6cef.js
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{258:function(t,e,n){},283:function(t,e,n){"use strict";n(258)},313:function(t,e,n){"use strict";n.r(e);var i={functional:!0,props:{type:{type:String,default:"tip"},text:String,vertical:{type:String,default:"top"}},render:(t,{props:e,slots:n})=>t("span",{class:["badge",e.type],style:{verticalAlign:e.vertical}},e.text||n().default)},p=(n(283),n(14)),l=Object(p.a)(i,void 0,void 0,!1,null,"15b7b770",null);e.default=l.exports}}]);
+=======
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{258:function(t,e,n){},283:function(t,e,n){"use strict";n(258)},312:function(t,e,n){"use strict";n.r(e);var i={functional:!0,props:{type:{type:String,default:"tip"},text:String,vertical:{type:String,default:"top"}},render:(t,{props:e,slots:n})=>t("span",{class:["badge",e.type],style:{verticalAlign:e.vertical}},e.text||n().default)},p=(n(283),n(14)),l=Object(p.a)(i,void 0,void 0,!1,null,"15b7b770",null);e.default=l.exports}}]);
+>>>>>>> Stashed changes:docs/src/.vuepress/dist/assets/js/5.f48a393e.js

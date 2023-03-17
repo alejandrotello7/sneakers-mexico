@@ -3,39 +3,43 @@
     <h1 class="text-2xl font-bold pb-4">
       Noticias actuales
     </h1>
-    <div class="grid grid-rows-3">
-      <div class="grid grid-cols-2 pb-4 row-span-1">
-        <div>
+    <div class="grid sm:grid-rows-3 grid-cols-1 w-full">
+      <div class="grid pb-4 sm:grid-cols-2 sm:row-span-1">
+          <div>
           <a :href="articles[0].path">
             <img :alt="articles[0].frontmatter.title" :src="'.' + articles[0].frontmatter.imageUrl" />
           </a>
         </div>
-        <div class="pl-4">
-          <h2 class="text-xl font-bold">
+          <div class="pl-4">
+          <span class="text-xl font-bold">
             {{ articles[0].frontmatter.title }}
-          </h2>
-          <p>
-            {{ articles[0].frontmatter.description }}
-            <br>
+          </span>
+          <br>
+          <span class="italic text-xs">
             {{ formatDate(articles[0].frontmatter.date) }}
+          </span>
+          <p class="pt-3">
+            {{ articles[0].frontmatter.description }}
             <br>
             <router-link :to="articles[0].path">Read more</router-link>
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-3 row-span-2">
+      <div class="grid sm:grid-cols-3 sm:row-span-2">
         <div v-for="n in 3" class="px-4">
-          <h2 class="text-xl font-bold">
+          <span class="text-xl font-bold">
             {{ articles[n].frontmatter.title }}
-          </h2>
-          <div>
+          </span>
+          <br>
+          <span class="italic text-xs">
+            {{ formatDate(articles[n].frontmatter.date) }}
+          </span>
+          <div class="pt-3">
             <img :alt="articles[n].frontmatter.title" :src="'.' + articles[n].frontmatter.imageUrl" />
 
           </div>
           <p>
             {{ articles[n].frontmatter.description }}
-            <br>
-            {{ formatDate(articles[n].frontmatter.date) }}
             <br>
             <router-link :to="articles[n].path">Read more</router-link>
           </p>

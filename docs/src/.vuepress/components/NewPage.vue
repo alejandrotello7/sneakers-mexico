@@ -4,22 +4,19 @@
       <Navbar/>
     </div>
     <div class="content py-5 flex">
-      <div class="advertising w-1/5 order-1 border-solid border-r-2">
-
-      </div>
-      <div class="article w-3/5 order-2 py-5 h-full px-3">
-        <h1 class="text-2xl font-extrabold pb-3">
+      <div class="article lg:w-3/5 lg:order-2 py-5 h-full px-3">
+        <h1 class="text-2xl font-extrabold">
           {{ $page.frontmatter.title }}
         </h1>
         <span class="italic">
           {{ formatDate }}
         </span>
-        <Content />
+        <Content class="pt-3"/>
         <div>
           <footer>
             <span>
               <div class="flex justify-start pt-1">
-                <img class="flex-initial ":src="'/assets/img/tello.png'" />
+                <img class="flex-initial ":src="'..' + '/assets/img/tello.png'" />
                 <div class="flex-initial">
                   <br>
                   <span> Escrito por: </span>
@@ -31,7 +28,10 @@
           </footer>
         </div>
       </div>
-      <div class="advertising order-3 w-1/5  border-solid border-l-2 ">
+      <div class="advertising lg:w-1/5 lg:order-1 lg:border-solid lg:border-r-2">
+
+      </div>
+      <div class="advertising lg:order-3 lg:w-1/5 lg:border-solid lg:border-l-2 ">
       </div>
     </div>
   </div>

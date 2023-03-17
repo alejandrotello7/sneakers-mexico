@@ -4,8 +4,10 @@ const { description } = require('../../package')
 module.exports = {
   title: 'Sneakers México',
   description: description,
-  base: "/sneakers-mexico/",
+<<<<<<< Updated upstream
+=======
 
+>>>>>>> Stashed changes
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *

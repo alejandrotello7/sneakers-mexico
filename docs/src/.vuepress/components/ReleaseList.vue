@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="grid grid-cols-1" >
-      <h1 class="text-2xl font-bold">
+      <h1 class="text-2xl font-bold pb-4">
         Próximos Lanzamientos
       </h1>
       <div v-for="release in releases">
@@ -10,7 +10,7 @@
             <a :href="release.path" class="col-start-1">
               <img :alt="release.imageTitle" :src="'.'+release.imageUrl" />
             </a>
-            <div class="col-start-2 text-sm pl-2 pt-12">
+            <div class="col-start-2 text-sm xl:text-sm pl-2 pt-12">
               <a :href="release.path">
                 <div class="font-bold ">{{ release.imageTitle }}</div>
                 <div class="py">{{ release.date }}</div>

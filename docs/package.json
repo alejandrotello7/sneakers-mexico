@@ -11,9 +11,8 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "docs:build":"vuepress build docs",
+    "docs:build": "vuepress build docs",
     "deploy": "sh deploy.sh"
-
   },
   "license": "MIT",
   "devDependencies": {
@@ -27,6 +26,7 @@
     "tailwindcss-plugins": "^0.3.0",
     "vuepress": "^1.5.2",
     "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-plugin-google-adsense": "^0.2.1",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }

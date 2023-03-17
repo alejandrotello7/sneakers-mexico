@@ -10,8 +10,5 @@ brand: Nike
 
  # {{ $frontmatter.title }}
 
-::: slot ama1 
-![Lanzamiento image](/assets/img/ama1.webp)
-:::
 <ListaLanzamientos />
 
