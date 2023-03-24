@@ -5,44 +5,51 @@
     </h1>
     <div class="grid sm:grid-rows-3 grid-cols-1 w-full">
       <div class="grid pb-4 sm:grid-cols-2 sm:row-span-1">
-          <div>
-          <a :href="articles[0].path">
-            <img :alt="articles[0].frontmatter.title" :src="'.' + articles[0].frontmatter.imageUrl" />
-          </a>
-        </div>
-          <div class="pl-4">
+        <div class="pl-4">
           <span class="text-xl font-bold">
+            <a :href="articles[0].path">
             {{ articles[0].frontmatter.title }}
+            </a>
           </span>
           <br>
           <span class="italic text-xs">
             {{ formatDate(articles[0].frontmatter.date) }}
           </span>
-          <p class="pt-3">
+          <p class="pt-3 invisible sm:visible">
             {{ articles[0].frontmatter.description }}
             <br>
             <router-link :to="articles[0].path">Read more</router-link>
           </p>
         </div>
+        <div class="sm:order-first">
+          <a :href="articles[0].path">
+            <img :alt="articles[0].frontmatter.title" :src="location + articles[0].frontmatter.imageUrl" />
+          </a>
+        </div>
       </div>
       <div class="grid sm:grid-cols-3 sm:row-span-2">
         <div v-for="n in 3" class="px-4">
           <span class="text-xl font-bold">
-            {{ articles[n].frontmatter.title }}
+            <a :href="articles[n].path">
+              {{ articles[n].frontmatter.title }}
+            </a>
+
           </span>
           <br>
           <span class="italic text-xs">
             {{ formatDate(articles[n].frontmatter.date) }}
           </span>
           <div class="pt-3">
-            <img :alt="articles[n].frontmatter.title" :src="'.' + articles[n].frontmatter.imageUrl" />
+            <a :href="articles[n].path">
+              <img :alt="articles[n].frontmatter.title" :src="location + articles[n].frontmatter.imageUrl" />
+            </a>
 
           </div>
-          <p>
+          <div class="invisible sm:visible">
             {{ articles[n].frontmatter.description }}
             <br>
             <router-link :to="articles[n].path">Read more</router-link>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -53,6 +60,9 @@
 <script>
 export default {
   name: "NewsList.vue",
+  props: {
+    location: String,
+  },
   computed: {
     articles() {
       return this.$site.pages
@@ -67,6 +77,7 @@ export default {
         month: "long",
         day: "numeric",
       };
+      console.log(this.location)
       return new Date(fecha).toLocaleDateString('es-mx',options)
     }
   }

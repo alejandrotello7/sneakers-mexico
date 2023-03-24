@@ -5,6 +5,7 @@ author: Alejandro Tello
 description:
     Este es el primer articulo
 imageUrl: /assets/img/articles/sneakers1.jpg
+actionLink: /noticias/
 layout: NewPage
 ---
 

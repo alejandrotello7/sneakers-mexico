@@ -4,6 +4,11 @@ const { description } = require('../../package')
 module.exports = {
   title: 'Sneakers México',
   description: description,
+  locales: {
+    '/':{
+      lang: 'es-MX'
+    },
+  },
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -50,9 +55,49 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    ['@vuepress/plugin-back-to-top'],
+    ['@vuepress/plugin-medium-zoom'],
+      ['@vuepress/active-header-links'],
+    ['@vuepress/google-analytics', {'ga': 'UA-221767209-1'}],
+    ['robots',
+        {/**
+         * @host
+         * Mandatory, You have to provide the host URL
+         */
+        host: "https://www.sneakersmx.com.mx",
+        /**
+         * @disallowAll
+         * Optional: if it's true, all others options are ignored and exclude all robots from the entire server
+         */
+        disallowAll: false,
+        /**
+         * @allowAll
+         * Optional: if it's true and @disallowAll is false, all others options are ignored and allow all robots complete access
+         */
+        allowAll: true,
+        /**
+         * @sitemap
+         * Optional, by default: sitemap.xml
+         */
+        sitemap: "/sitemap.xml",
+        /**
+         * @policies
+         * Optional, by default: null
+         */
+        policies: [
+            {
+                userAgent: '*',
+                disallow: [
+                    '/admin','/login'
+                ],
+                allow: [    // Optional: Allowed paths.
+                    'lanzamientos','noticias'
+                ]
+            }
+        ]}
+      ]
   ],
+
   postcss: {
     plugins: [
         require('tailwindcss')('./tailwind.config.js'),

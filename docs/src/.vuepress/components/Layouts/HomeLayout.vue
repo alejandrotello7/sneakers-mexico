@@ -6,7 +6,7 @@
     <div class="content py-8">
       <div class="lg:flex-1 lg:flex lg:flex-row flex-col py-8">
         <main class="content xl:w-3/5 lg:w-6/12 lg:order-2 border-solid border-l-2 pl-4 w-full">
-          <NewsList />
+          <NewsList location="." />
         </main>
         <div class="releases lg:order-first xl:w-1/5 lg:w-3/12 w-full">
           <ReleaseList  />
@@ -17,7 +17,10 @@
       </div>
     </div>
     <div>
-      <footer>
+      <footer class="grid place-items-center">
+        <div>
+          {{ $page.frontmatter.footer }}
+        </div>
       </footer>
     </div>
   </div>
@@ -25,6 +28,7 @@
 
 <script>
 import Navbar from "@vuepress/theme-default/components/Navbar";
+import Sidebar from "@vuepress/theme-default/components/Navbar";
 import LanzamientosLayout from "../LanzamientosLayout";
 import ListaLanzamientos from "../ListaLanzamientos";
 import ReleaseList from "../ReleaseList";

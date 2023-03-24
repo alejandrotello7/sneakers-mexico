@@ -17,8 +17,9 @@
   "license": "MIT",
   "devDependencies": {
     "@vue/babel-preset-app": "^4.4.6",
+    "@vuepress/plugin-active-header-links": "^1.9.9",
     "@vuepress/plugin-blog": "^1.9.2",
-    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/plugin-google-analytics": "^1.9.9",
     "autoprefixer": "^9.8.5",
     "moment": "^2.27.0",
     "svg-inline-loader": "^0.8.2",
@@ -28,5 +29,8 @@
     "vuepress-plugin-disqus": "^0.2.0",
     "vuepress-plugin-google-adsense": "^0.2.1",
     "vuepress-plugin-seo": "^0.1.4"
+  },
+  "dependencies": {
+    "vuepress-plugin-robots": "^1.0.1"
   }
 }

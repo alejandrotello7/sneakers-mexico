@@ -45,6 +45,7 @@ export default {
   },
   computed: {
     lanzamientos() {
+      const now = new Date();
       return this.$site.pages
           .filter(
               (x) =>
@@ -64,10 +65,15 @@ export default {
       this.$site.pages.map((page) => {
         this.pagesArray.push(page)
       });
+      const now = new Date();
+
 
       //Filter launch sneakers
       this.pagesArray.forEach(page => {
-        if( page.path.startsWith("/lanzamientos/") && !page.frontmatter.lanzamientos_index){
+        if(
+            page.path.startsWith("/lanzamientos/") &&
+            !page.frontmatter.lanzamientos_index &&
+            new Date(page.frontmatter.date) > now){
           this.dates.push(page.frontmatter.date)
           this.releases.push({
             date: page.frontmatter.date,
